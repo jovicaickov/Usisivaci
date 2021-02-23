@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,16 +30,17 @@
     
     <body>
         
-        <header>
+        <header id="header">
             <nav>
                 <div class="row">
                     <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <a href="#header"><img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"></a>
                     <ul class="main-nav js--main-nav">
+                        <li><a href="#header">Po<span>č</span>etna</a></li>
                         <li><a href="#features">O nama</a></li>
-                        <li><a href="#works">Galerija</a></li>
+                        <li><a href="#galery">Galerija</a></li>
                         <li><a href="#cities">Kontakt</a></li>
-                        <li><a href="#plans">TTT</a></li>
+                        <li><a href="#contact">Pošalji poruku</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>
@@ -58,7 +59,7 @@
             <div class="row">
                 <h2>&nbsp;&nbsp;&nbsp;&nbsp;Ko smo mi &mdash; Sauber Haus</h2>
                 <p class="long-copy">
-                    Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+                    Zdravo, mi smo Sauber Haus - Usisiva<span>č</span>i, ovde ćemo staviti još texta, i još texta, i još texta, i još texta, i još texta, i još texta, i još texta, i još texta, i još texta, i još texta, i još texta, i još texta!
                 </p>
             </div>
             
@@ -99,7 +100,7 @@
         </section>
         
         
-        <section class="section-meals">
+        <section class="section-meals" id="galery">
             
             <ul class="meals-showcase clearfix">
                 <li>
@@ -215,7 +216,7 @@
                         
                         <div class="city-feature">
                             <ion-icon name="mail" class="icon-small"></ion-icon>
-                            <a href="#">usisivacisrbija@gmail.com</a>
+                            <a href="mailto:jovica.ickov@yahoo.com">usisivacisrbija@gmail.com</a>
                         </div>
                     </div>     
                 </div>
@@ -279,7 +280,7 @@
         </section>
         
         
-        <section class="section-plans js--section-plans" id="plans">
+        <section class="section-plans js--section-plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
@@ -356,65 +357,69 @@
         </section>
         
         
-        <section>
+        <section id="contact">
             <div class="row js--wp-5">
-                <h2>We're happy to hear from you</h2>
+                <h2>Pošalji nam poruku</h2>
             </div>
             
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <form method="post" action="contactform.php" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="name">Name</label>
+                            <label for="name">Ime i prezime</label>
                         </div>
                         
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                            <input type="text" name="name" id="name" placeholder="Vaše ime i prezime" required>
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="email">Email</label>
+                            <label for="tel">Telefon</label>
                         </div>
                         
                         <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <input type="tel" name="tel" id="tel" pattern="[0-9]{<10}" minlength="9" maxlength="14" placeholder="Vaš broj telefona" required>
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="find-us">How did you find us?</label>
+                            <label for="email">E-mail</label>
+                        </div>
+                        
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Vaš e-mail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">Kako si saznao za nas?</label>
                         </div>
                         
                         <div class="col span-2-of-3">
                             <select name="find-us" id="find-us">
-                                <option value="friends" selected>Friends</option>
-                                <option value="search">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
+                                <option value="Nije izabrano" selected></option>
+                                <option value="Prijatelja">Prijatelj</option>
+                                <option value="Preporuke">Preporuka</option>
+                                <option value="Drustvenih mreza">Društvene mreže</option>
+                                <option value="Reklame">Reklama</option>
+                                <option value="Oglasa">Oglasi</option>
+                                <option value="Novina">Novine</option>
+                                <option value="Drugo">Drugo</option>
                             </select>
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="news">Newsletter</label>
+                            <label>Pošalji nam poruku</label>
                         </div>
                         
                         <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
-                        </div>
-                        
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
+                            <textarea name="message" placeholder="Vaša poruka"></textarea>
                         </div>
                     </div>
                     
@@ -424,7 +429,7 @@
                         </div>
                         
                         <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
+                            <input type="submit" name="submit" value="Pošalji!">
                         </div>
                     </div>
                 </form>
@@ -457,7 +462,7 @@
             
             <div class="row">
                 <p>
-                    Copyright &copy; 2021 by Omnifood. All right reserved.
+                    Copyright &copy; 2021 Sauber Haus. All right reserved.
                 </p>
             </div>
         </footer>
