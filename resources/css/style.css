@@ -67,7 +67,9 @@ h1 {
 }
 
 h1 span,
-h3 span {
+h3 span,
+p span,
+a span {
     font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
@@ -445,6 +447,11 @@ header {
     margin-bottom: 5px;
 }
 
+.contact-block {
+    display: block;
+    margin-top: 20px;
+}
+
 /* ------------------------------------------------------------------------------- */
 /* TESTIMONIALS */
 /* ------------------------------------------------------------------------------- */
@@ -488,7 +495,7 @@ cite img {
 }
 
 /* ------------------------------------------------------------------------------- */
-/* TESTIMONIALS */
+/* PLANS */
 /* ------------------------------------------------------------------------------- */
 
 .section-plans {
@@ -555,6 +562,7 @@ cite img {
 
 input[type=text],
 input[type=email],
+input[type=tel],
 select,
 textarea {
     width: 100%;
@@ -694,10 +702,6 @@ footer p {
 }
 
 
-.contact-block {
-    display: block;
-    margin-top: 20px;
-}
 
 
 
