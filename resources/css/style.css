@@ -286,6 +286,10 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+.header-homelink {
+    display: none;
+}
+
 /* Mobile navi */
 .mobile-nav-icon {
     float: right;
@@ -326,6 +330,10 @@ header {
     display: none;
 }
 .sticky .logo-black {
+    display: block;
+}
+
+.sticky .header-homelink {
     display: block;
 }
 
