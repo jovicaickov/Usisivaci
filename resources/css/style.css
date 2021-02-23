@@ -252,6 +252,10 @@ header {
     margin: 5px 0;
 }
 
+.all-logos a {
+    border: 0;
+}
+
 /* Main navi */
 
 .main-nav {
