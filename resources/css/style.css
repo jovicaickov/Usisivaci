@@ -257,12 +257,18 @@ header {
     padding: 0;
 }
 
+
+
 /* Main navi */
 
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 55px;
+}
+
+.main-nav li:first-child {
+    display: none;
 }
 
 .main-nav li {
@@ -330,12 +336,17 @@ header {
 .sticky .logo {
     display: none;
 }
+
 .sticky .logo-black {
     display: block;
 }
 
 .sticky .header-homelink {
     display: block;
+}
+
+.sticky .main-nav li:first-child {
+    display: inline-block;
 }
 
 /* ------------------------------------------------------------------------------- */
